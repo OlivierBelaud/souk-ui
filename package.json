@@ -1,24 +1,67 @@
 {
   "name": "souk-ui",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "turbo format",
-    "typecheck": "turbo typecheck"
+    "format:check": "prettier --check .",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "test:coverage": "turbo test:coverage",
+    "test:e2e": "playwright test",
+    "size": "size-limit",
+    "check:package": "npm run build --workspace=@souk/ui && publint packages/ui && attw --pack packages/ui --exclude-entrypoints ./styles.css",
+    "check:consumer": "node scripts/consumer-smoke.mjs",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm run test:coverage && npm run build && npm run check:package && npm run check:consumer && npm run size",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "npm run check && changeset publish"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.18.5",
+    "@axe-core/playwright": "^4.12.1",
+    "@changesets/cli": "^2.31.1",
+    "@playwright/test": "^1.62.1",
+    "@size-limit/preset-small-lib": "^13.0.3",
+    "@testing-library/jest-dom": "^7.0.0",
+    "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest-axe": "^3.5.9",
+    "@vitest/coverage-v8": "^4.1.10",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "jest-axe": "^11.0.0",
+    "jsdom": "^27.4.0",
     "prettier": "^3.8.3",
     "prettier-plugin-tailwindcss": "^0.8.0",
+    "publint": "^0.3.22",
+    "size-limit": "^13.0.3",
+    "tsup": "^8.5.1",
     "turbo": "^2.9.18",
-    "typescript": "~6"
+    "typescript": "~6",
+    "vitest": "^4.1.10"
   },
   "packageManager": "npm@11.11.0",
   "engines": {
-    "node": ">=20"
+    "node": ">=22.14.0"
   },
+  "overrides": {
+    "esbuild": "^0.28.1"
+  },
+  "size-limit": [
+    {
+      "name": "Button entry",
+      "path": "packages/ui/dist/components/button.js",
+      "limit": "15 kB"
+    },
+    {
+      "name": "DataTable entry",
+      "path": "packages/ui/dist/components/data-table.js",
+      "limit": "70 kB"
+    }
+  ],
   "workspaces": [
     "apps/*",
     "packages/*"
