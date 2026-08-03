@@ -11,6 +11,7 @@
     "typecheck": "turbo typecheck",
     "test": "turbo test",
     "test:coverage": "turbo test:coverage",
+    "pretest:e2e": "npm run build --workspace=@souk/ui",
     "test:e2e": "playwright test",
     "size": "size-limit",
     "check:package": "npm run build --workspace=@souk/ui && publint packages/ui && attw --pack packages/ui --exclude-entrypoints ./styles.css",
