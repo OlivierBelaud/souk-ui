@@ -8,8 +8,8 @@ import {
   type Locale,
 } from "react-day-picker"
 
-import { cn } from "@souk/ui/lib/utils"
-import { Button, buttonVariants } from "@souk/ui/components/button"
+import { cn } from "@soukjs/ui/lib/utils"
+import { Button, buttonVariants } from "@soukjs/ui/components/button"
 import {
   ChevronLeftIcon,
   ChevronRightIcon,

@@ -1,5 +1,5 @@
 {
-  "name": "@souk/ui",
+  "name": "@soukjs/ui",
   "version": "0.1.0",
   "description": "Souk's production-grade React 19, Tailwind CSS 4 and shadcn/ui system for SaaS products.",
   "type": "module",

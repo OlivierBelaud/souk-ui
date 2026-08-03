@@ -9,15 +9,15 @@ import {
   ChevronRightIcon,
 } from "lucide-react"
 
-import { Button } from "@souk/ui/components/button"
-import { Label } from "@souk/ui/components/label"
+import { Button } from "@soukjs/ui/components/button"
+import { Label } from "@soukjs/ui/components/label"
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@souk/ui/components/select"
+} from "@soukjs/ui/components/select"
 
 type DataTablePaginationProps<TData> = {
   table: Table<TData>

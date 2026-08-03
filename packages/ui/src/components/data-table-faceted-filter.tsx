@@ -4,8 +4,8 @@ import type { Column, Row } from "@tanstack/react-table"
 import type { ComponentType } from "react"
 import { ListFilterIcon, PlusCircleIcon } from "lucide-react"
 
-import { Badge } from "@souk/ui/components/badge"
-import { Button } from "@souk/ui/components/button"
+import { Badge } from "@soukjs/ui/components/badge"
+import { Button } from "@soukjs/ui/components/button"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -14,8 +14,8 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@souk/ui/components/dropdown-menu"
-import { Separator } from "@souk/ui/components/separator"
+} from "@soukjs/ui/components/dropdown-menu"
+import { Separator } from "@soukjs/ui/components/separator"
 
 type DataTableFilterOption = {
   label: string

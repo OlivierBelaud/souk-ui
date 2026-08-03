@@ -20,7 +20,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@souk/ui/components/carousel"
+} from "@soukjs/ui/components/carousel"
 
 describe("Carousel", () => {
   beforeEach(() => {

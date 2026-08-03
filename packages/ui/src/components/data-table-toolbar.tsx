@@ -3,11 +3,11 @@
 import type { Table } from "@tanstack/react-table"
 import { RotateCcwIcon, SlidersHorizontalIcon } from "lucide-react"
 
-import { Button } from "@souk/ui/components/button"
+import { Button } from "@soukjs/ui/components/button"
 import {
   DataTableFacetedFilter,
   type DataTableFilterOption,
-} from "@souk/ui/components/data-table-faceted-filter"
+} from "@soukjs/ui/components/data-table-faceted-filter"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -15,8 +15,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@souk/ui/components/dropdown-menu"
-import { Input } from "@souk/ui/components/input"
+} from "@soukjs/ui/components/dropdown-menu"
+import { Input } from "@soukjs/ui/components/input"
 
 type DataTableFilter = {
   columnId: string

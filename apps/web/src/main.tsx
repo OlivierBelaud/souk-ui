@@ -1,7 +1,7 @@
 import { StrictMode } from "react"
 import { createRoot } from "react-dom/client"
 
-import "@souk/ui/styles.css"
+import "@soukjs/ui/styles.css"
 import { App } from "./App.tsx"
 import { ThemeProvider } from "@/components/theme-provider.tsx"
 

@@ -18,11 +18,11 @@ import {
   type VisibilityState,
 } from "@tanstack/react-table"
 
-import { DataTablePagination } from "@souk/ui/components/data-table-pagination"
+import { DataTablePagination } from "@soukjs/ui/components/data-table-pagination"
 import {
   DataTableToolbar,
   type DataTableFilter,
-} from "@souk/ui/components/data-table-toolbar"
+} from "@soukjs/ui/components/data-table-toolbar"
 import {
   Table,
   TableBody,
@@ -30,7 +30,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@souk/ui/components/table"
+} from "@soukjs/ui/components/table"
 
 type DataTableState = {
   columnFilters: ColumnFiltersState

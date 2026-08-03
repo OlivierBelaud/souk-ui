@@ -14,8 +14,8 @@
     "components": "@/components",
     "hooks": "@/hooks",
     "lib": "@/lib",
-    "utils": "@souk/ui/lib/utils",
-    "ui": "@souk/ui/components"
+    "utils": "@soukjs/ui/lib/utils",
+    "ui": "@soukjs/ui/components"
   },
   "rtl": false,
   "menuColor": "default",

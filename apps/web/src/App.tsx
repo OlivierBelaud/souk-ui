@@ -21,9 +21,13 @@ import {
   UsersIcon,
 } from "lucide-react"
 
-import { Alert, AlertDescription, AlertTitle } from "@souk/ui/components/alert"
-import { Badge } from "@souk/ui/components/badge"
-import { Button } from "@souk/ui/components/button"
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from "@soukjs/ui/components/alert"
+import { Badge } from "@soukjs/ui/components/badge"
+import { Button } from "@soukjs/ui/components/button"
 import {
   Card,
   CardAction,
@@ -32,11 +36,11 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@souk/ui/components/card"
-import { Checkbox } from "@souk/ui/components/checkbox"
-import { DataTable } from "@souk/ui/components/data-table"
-import { DataTableColumnHeader } from "@souk/ui/components/data-table-column-header"
-import { dataTableFacetedFilter } from "@souk/ui/components/data-table-faceted-filter"
+} from "@soukjs/ui/components/card"
+import { Checkbox } from "@soukjs/ui/components/checkbox"
+import { DataTable } from "@soukjs/ui/components/data-table"
+import { DataTableColumnHeader } from "@soukjs/ui/components/data-table-column-header"
+import { dataTableFacetedFilter } from "@soukjs/ui/components/data-table-faceted-filter"
 import {
   Empty,
   EmptyContent,
@@ -44,7 +48,7 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@souk/ui/components/empty"
+} from "@soukjs/ui/components/empty"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -52,25 +56,25 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@souk/ui/components/dropdown-menu"
-import { Input } from "@souk/ui/components/input"
-import { Label } from "@souk/ui/components/label"
-import { Progress } from "@souk/ui/components/progress"
-import { Separator } from "@souk/ui/components/separator"
-import { Switch } from "@souk/ui/components/switch"
+} from "@soukjs/ui/components/dropdown-menu"
+import { Input } from "@soukjs/ui/components/input"
+import { Label } from "@soukjs/ui/components/label"
+import { Progress } from "@soukjs/ui/components/progress"
+import { Separator } from "@soukjs/ui/components/separator"
+import { Switch } from "@soukjs/ui/components/switch"
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "@souk/ui/components/tabs"
-import { Textarea } from "@souk/ui/components/textarea"
+} from "@soukjs/ui/components/tabs"
+import { Textarea } from "@soukjs/ui/components/textarea"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@souk/ui/components/tooltip"
+} from "@soukjs/ui/components/tooltip"
 
 type Project = {
   id: string
@@ -606,7 +610,7 @@ function Components() {
       <SectionHeading
         eyebrow="02 · Components"
         title="The full shadcn/ui surface, owned by Souk."
-        description="Composable source-level components built on Radix primitives, with a stable @souk/ui package contract. No visual emulation and no app-local forks."
+        description="Composable source-level components built on Radix primitives, with a stable @soukjs/ui package contract. No visual emulation and no app-local forks."
       />
       <div className="grid gap-5 lg:grid-cols-[1.1fr_.9fr]">
         <Card>
@@ -946,7 +950,7 @@ export function App() {
                 </Button>
                 <Button size="lg" variant="outline">
                   <CommandIcon />
-                  npm i @souk/ui
+                  npm i @soukjs/ui
                 </Button>
               </div>
               <div className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-muted-foreground">

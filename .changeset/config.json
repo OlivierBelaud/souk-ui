@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["@souk/ui-docs"]
+  "ignore": ["@soukjs/ui-docs"]
 }

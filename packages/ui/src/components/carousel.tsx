@@ -5,8 +5,8 @@ import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
 
-import { cn } from "@souk/ui/lib/utils"
-import { Button } from "@souk/ui/components/button"
+import { cn } from "@soukjs/ui/lib/utils"
+import { Button } from "@soukjs/ui/components/button"
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
 
 type CarouselApi = UseEmblaCarouselType[1]

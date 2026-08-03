@@ -11,7 +11,7 @@
     "strict": true,
     "noEmit": true,
     "paths": {
-      "@souk/ui/*": ["./src/*"]
+      "@soukjs/ui/*": ["./src/*"]
     }
   },
   "include": ["."],

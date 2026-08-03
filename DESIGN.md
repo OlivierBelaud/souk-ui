@@ -58,9 +58,9 @@ Transitions clarify state; they do not decorate it. Keep standard interactions n
 
 - Components expose `data-slot` attributes for stable styling, testing, and composition.
 - Interactive components are based on Radix or Base UI primitives and preserve their accessibility behavior.
-- All component imports use explicit subpaths: `@souk/ui/components/button`.
+- All component imports use explicit subpaths: `@soukjs/ui/components/button`.
 - React and React DOM are peer dependencies to prevent duplicate runtimes.
-- CSS is imported once through `@souk/ui/styles.css`.
+- CSS is imported once through `@soukjs/ui/styles.css`.
 - Consumer applications may compose layout around components, but must not redefine core colors, typography, radius, focus rings, or component state styling locally.
 
 ## Data-heavy interfaces

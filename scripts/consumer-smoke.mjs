@@ -32,11 +32,11 @@ function write(relativePath, contents) {
 }
 
 try {
-  run("npm", ["run", "build", "--workspace=@souk/ui"])
+  run("npm", ["run", "build", "--workspace=@soukjs/ui"])
   const packResult = JSON.parse(
     run("npm", [
       "pack",
-      "--workspace=@souk/ui",
+      "--workspace=@soukjs/ui",
       "--json",
       "--ignore-scripts",
       "--pack-destination",
@@ -83,7 +83,7 @@ try {
         type: "module",
         scripts: { build: "tsc --noEmit && vite build" },
         dependencies: {
-          "@souk/ui": `file:${tarball}`,
+          "@soukjs/ui": `file:${tarball}`,
           react: "^19.0.0",
           "react-dom": "^19.0.0",
         },
@@ -145,14 +145,14 @@ export default defineConfig({
   )
   write(
     "src/styles.css",
-    '@import "@souk/ui/styles.css";\n@source "../node_modules/@souk/ui/dist";\n'
+    '@import "@soukjs/ui/styles.css";\n@source "../node_modules/@soukjs/ui/dist";\n'
   )
   write(
     "src/main.tsx",
     `import React from "react"
 import { createRoot } from "react-dom/client"
-import { Button } from "@souk/ui/components/button"
-import { DataTable, type ColumnDef } from "@souk/ui/components/data-table"
+import { Button } from "@soukjs/ui/components/button"
+import { DataTable, type ColumnDef } from "@soukjs/ui/components/data-table"
 import "./styles.css"
 
 type Row = { id: string; name: string }

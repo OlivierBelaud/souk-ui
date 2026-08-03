@@ -1,5 +1,5 @@
 ---
-"@souk/ui": patch
+"@soukjs/ui": patch
 ---
 
 Establish the reusable Souk UI package, advanced DataTable, design tokens, and

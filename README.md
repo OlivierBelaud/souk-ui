@@ -25,23 +25,23 @@ DESIGN.md                Visual language and governance rules
 
 ## Install
 
-The package is prepared as `@souk/ui`. Until the first npm release is bootstrapped, consume it from the workspace or GitHub package source.
+The package is prepared as `@soukjs/ui`. Until the first npm release is bootstrapped, consume it from the workspace or GitHub package source.
 
 ```bash
-npm install @souk/ui
+npm install @soukjs/ui
 ```
 
 Import the system once in the application entry CSS or TypeScript entry:
 
 ```ts
-import "@souk/ui/styles.css"
+import "@soukjs/ui/styles.css"
 ```
 
 Then import components by subpath. Subpath exports keep application bundles tree-shakeable.
 
 ```tsx
-import { Button } from "@souk/ui/components/button"
-import { DataTable } from "@souk/ui/components/data-table"
+import { Button } from "@soukjs/ui/components/button"
+import { DataTable } from "@soukjs/ui/components/data-table"
 ```
 
 For a TanStack Start application, place the stylesheet import in the root route or global stylesheet and use components normally from client-capable routes. Interactive entries include the `"use client"` boundary for framework interoperability.
@@ -49,11 +49,11 @@ For a TanStack Start application, place the stylesheet import in the root route 
 ## DataTable
 
 ```tsx
-import type { ColumnDef } from "@souk/ui/components/data-table"
+import type { ColumnDef } from "@soukjs/ui/components/data-table"
 
-import { DataTable } from "@souk/ui/components/data-table"
-import { DataTableColumnHeader } from "@souk/ui/components/data-table-column-header"
-import { dataTableFacetedFilter } from "@souk/ui/components/data-table-faceted-filter"
+import { DataTable } from "@soukjs/ui/components/data-table"
+import { DataTableColumnHeader } from "@soukjs/ui/components/data-table-column-header"
+import { dataTableFacetedFilter } from "@soukjs/ui/components/data-table-faceted-filter"
 
 const columns: ColumnDef<Project>[] = [
   {
@@ -133,9 +133,9 @@ Every behavioral change needs a user-facing test. Every visual change must remai
 1. Add a changeset with `npm run changeset`.
 2. Merge the version update produced by `npm run version-packages`.
 3. Create a GitHub release tagged with the exact package version, for example `v0.1.0`.
-4. The publish workflow validates the repository again and publishes `@souk/ui` with npm provenance.
+4. The publish workflow validates the repository again and publishes `@soukjs/ui` with npm provenance.
 
-The first npm publication must be bootstrapped by an owner of the `@souk` scope. After that, configure npm Trusted Publishing for `.github/workflows/publish.yml`; no long-lived npm token is required.
+The first npm publication must be bootstrapped by an owner of the `@soukjs` scope. After that, configure npm Trusted Publishing for `.github/workflows/publish.yml`; no long-lived npm token is required.
 
 ## License
 

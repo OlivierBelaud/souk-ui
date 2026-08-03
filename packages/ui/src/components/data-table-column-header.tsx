@@ -8,15 +8,15 @@ import {
   EyeOffIcon,
 } from "lucide-react"
 
-import { Button } from "@souk/ui/components/button"
+import { Button } from "@soukjs/ui/components/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@souk/ui/components/dropdown-menu"
-import { cn } from "@souk/ui/lib/utils"
+} from "@soukjs/ui/components/dropdown-menu"
+import { cn } from "@soukjs/ui/lib/utils"
 
 type DataTableColumnHeaderProps<TData, TValue> = {
   column: Column<TData, TValue>

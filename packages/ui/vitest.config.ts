@@ -5,7 +5,7 @@ import { defineConfig } from "vitest/config"
 export default defineConfig({
   resolve: {
     alias: {
-      "@souk/ui": fileURLToPath(new URL("./src", import.meta.url)),
+      "@soukjs/ui": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
   test: {

@@ -4,11 +4,11 @@ import { functionalUpdate, type ColumnDef } from "@tanstack/react-table"
 import * as React from "react"
 import { describe, expect, it, vi } from "vitest"
 
-import { Checkbox } from "@souk/ui/components/checkbox"
-import { DataTable } from "@souk/ui/components/data-table"
-import type { DataTableState } from "@souk/ui/components/data-table"
-import { DataTableColumnHeader } from "@souk/ui/components/data-table-column-header"
-import { dataTableFacetedFilter } from "@souk/ui/components/data-table-faceted-filter"
+import { Checkbox } from "@soukjs/ui/components/checkbox"
+import { DataTable } from "@soukjs/ui/components/data-table"
+import type { DataTableState } from "@soukjs/ui/components/data-table"
+import { DataTableColumnHeader } from "@soukjs/ui/components/data-table-column-header"
+import { dataTableFacetedFilter } from "@soukjs/ui/components/data-table-faceted-filter"
 
 type Project = {
   id: string

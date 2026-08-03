@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react"
 import { describe, expect, it } from "vitest"
 
-import { Progress } from "@souk/ui/components/progress"
+import { Progress } from "@soukjs/ui/components/progress"
 
 describe("Progress", () => {
   it("forwards the default value contract to the accessible primitive", () => {

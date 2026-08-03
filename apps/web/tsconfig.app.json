@@ -23,7 +23,7 @@
     "noFallthroughCasesInSwitch": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@souk/ui/*": ["../../packages/ui/src/*"]
+      "@soukjs/ui/*": ["../../packages/ui/src/*"]
     }
   },
   "include": ["src"]
